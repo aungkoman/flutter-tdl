@@ -2,6 +2,8 @@
 
 My Flutter Journey
 
+2020-11-03
+Named Route ထဲမှာ data တွေ pass လုပ်တာအထိ အဆင်ပြေပြီ
 ## Getting Started
 
 This project is a starting point for a Flutter application.
