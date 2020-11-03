@@ -1,6 +1,6 @@
-# todolist
+# Hello to World
 
-To Do List Application
+My Flutter Journey
 
 ## Getting Started
 
