@@ -19,9 +19,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout demo',
       initialRoute: '/',
+      /* this is routing table */
       routes: {
-        '/' : (context) => MainApp(),
-        '/chat' : (context) => ChatApp(),
+        // '/' : (context) => MainApp(),
+        MainApp.routeName : (context) => MainApp(),
+        // '/chat' : (context) => ChatApp(),
+        ChatApp.routeName : (context) => ChatApp(),
       },
     );
   }

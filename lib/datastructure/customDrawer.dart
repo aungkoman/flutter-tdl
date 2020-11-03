@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:todolist/ChatApp.dart';
+import 'package:todolist/MainApp.dart';
+import 'package:todolist/data/ChatAppData.dart';
 import 'package:todolist/datastructure/listTile.dart';
 
 class customDrawer extends StatelessWidget {
@@ -16,19 +19,21 @@ class customDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.people,color: Colors.green,),
-            title: Text('List Tile Title'),
+            title: Text('Main App'),
             onTap: (){
               print("list tile title onTap");
               Navigator.pop(context);
+              Navigator.pushNamed(context, MainApp.routeName);
             },
           ),
           ListTile(
             leading: Icon(Icons.headset, color: Colors.redAccent),
-            title: Text('List Title 2'),
+            title: Text('Chat App'),
             trailing: Icon(Icons.send, color: Colors.lightBlueAccent),
             onTap: (){
               print("list tile 2 onTap");
               Navigator.pop(context);
+              Navigator.pushNamed(context, ChatApp.routeName, arguments: ChatAppData('user name', 'userId'));
             },
           )
         ],
