@@ -1,5 +1,5 @@
 class ChatAppData{
-  final String username;
-  final String userId;
+   String username;
+   String userId;
   ChatAppData(this.username, this.userId);
 }

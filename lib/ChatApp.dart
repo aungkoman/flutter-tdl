@@ -10,9 +10,14 @@ class ChatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ChatAppData chatAppData = ModalRoute.of(context).settings.arguments;
+
+    if(chatAppData == null) {
+      chatAppData = ChatAppData("","");
+    }
+
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Chatroom : '+chatAppData.username+' OK?')),
+        title: Center(child: Text('Chatroom ')),
       ),
       drawer: customDrawer(),
       // #docregion centered-text

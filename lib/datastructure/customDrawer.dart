@@ -23,7 +23,16 @@ class customDrawer extends StatelessWidget {
             onTap: (){
               print("list tile title onTap");
               Navigator.pop(context);
-              Navigator.pushNamed(context, MainApp.routeName);
+              // Navigator.pushNamed(context, MainApp.routeName,);
+              Navigator.push(context, PageRouteBuilder(
+                  opaque: false,
+                  pageBuilder: (context, _, __) {
+                    return ChatApp();
+                  },
+                  transitionsBuilder: (_, __, ___, Widget child) {
+                    return child;
+                  }
+              ));
             },
           ),
           ListTile(
