@@ -23,7 +23,8 @@ class customDrawer extends StatelessWidget {
             onTap: (){
               print("list tile title onTap");
               Navigator.pop(context);
-              // Navigator.pushNamed(context, MainApp.routeName,);
+              Navigator.pushNamed(context, MainApp.routeName);
+              /*
               Navigator.push(context, PageRouteBuilder(
                   opaque: false,
                   pageBuilder: (context, _, __) {
@@ -33,6 +34,8 @@ class customDrawer extends StatelessWidget {
                     return child;
                   }
               ));
+
+               */
             },
           ),
           ListTile(
