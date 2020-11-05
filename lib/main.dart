@@ -16,8 +16,13 @@ import 'datastructure/gridview.dart';
 import 'package/helloworld.dart';
 import 'ui/socketIo.dart';
 
-import 'package:rxdart/subjects.dart';
 
+
+import 'package:rxdart/subjects.dart';
+//import 'package:timezone/data/latest.dart' as tz;
+//
+import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/timezone.dart' as tz;
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
 FlutterLocalNotificationsPlugin();
@@ -55,6 +60,7 @@ Future<void> main() async {
 // needed if you intend to initialize in the `main` function
   WidgetsFlutterBinding.ensureInitialized();
 
+  // ဒေသစံတော်ချိန် ကိုက်ညီဖို့အတွက် Time Zone တွေ ပြင်ထားပေးရမယ် မဖြစ်မနေ
   await _configureLocalTimeZone();
 
   final NotificationAppLaunchDetails notificationAppLaunchDetails =
@@ -105,9 +111,12 @@ Future<void> main() async {
 
 
 Future<void> _configureLocalTimeZone() async {
-  //tz.initializeTimeZones();
+  tz.initializeTimeZones();
+  /* အခုထိ Rangoon နေတုန်းပဲ  , platform ကတော့ Asia/Yangon ထုတ်ပေးတယ် ဒါပေမယ့် timezone က မသိသေးဘူး Yangon ကို */
+  final String timeZoneName = "Asia/Rangoon";
   //final String timeZoneName = await platform.invokeMethod('getTimeZoneName');
-  //tz.setLocalLocation(tz.getLocation(timeZoneName));
+  //print("zone name is "+timeZoneName);
+  tz.setLocalLocation(tz.getLocation(timeZoneName));
 }
 
 //

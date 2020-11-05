@@ -30,6 +30,11 @@ dependencies:
   socket_io_client: ^0.9.11
   flutter_local_notifications: ^3.0.1+2
   rxdart: ^0.24.0
+  http: ^0.12.0+4
+  device_info: ^0.4.2+4
+  path_provider: ^1.6.7
+  shared_preferences: ^0.5.7
+  timezone: ^0.5.9
 
 dev_dependencies:
   flutter_test:
