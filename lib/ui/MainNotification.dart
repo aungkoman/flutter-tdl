@@ -254,7 +254,8 @@ class _MainNotificationState extends State<MainNotification> {
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
         UILocalNotificationDateInterpretation.absoluteTime,
-        matchDateTimeComponents: DateTimeComponents.time);
+        matchDateTimeComponents: DateTimeComponents.time); // matchDateTimeComponents ဆိုတာက daily/ weekly/ monthly or by time series...
+        // DatetimeComponents.time ဆိုရင် အချိန်အပိုင်းအခြားနဲ့၊ dayOfWeekAndTime ဆိုရင် အပတ်စဉ် အချိန်နဲ့ :D
   }
 
 

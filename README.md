@@ -1,6 +1,13 @@
 # Hello to World
 
 My Flutter Journey
+#### 2020-11-05
+Notification နဲ့ ပတ်သက်ပြီး အခြေခံအချက်တွေ အကုန်အဆင်ပြေသွားပြီ။ ဘာတွေပါမလဲ? 
+- Show notification
+- Schedule notification
+- Cancel notification
+- Notification payload
+context မတူတာတွေ၊ Material App ကို နှစ်ထပ်အုပ်ပြီး သုံးရတာတွေတော့ ရှိတယ်။ နောက်ပြီး time zone မှာလည်း မြန်မာနိုင်ငံက အခုထိ နောက်ကျနေတုန်း၊ ဆိုလိုချင်တာက Asia/Rangoon ဖြစ်နေတုန်းပဲ။ အဲ့တစ်ခုတော့ manual setup လုပ်ထားရတယ်။ ဆိုတော့ကာ ပြည်ပက လူတွေ သုံးဖို့အတွက်ပါ လုပ်ထားရင် တော့ အဲ့နေရာကို if နဲ့ စစ်မှ ရလိမ့်မယ်။
 #### 2020-11-04
 - notification
 - buttom navigation

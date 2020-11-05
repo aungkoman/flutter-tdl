@@ -115,7 +115,7 @@ Future<void> _configureLocalTimeZone() async {
   /* အခုထိ Rangoon နေတုန်းပဲ  , platform ကတော့ Asia/Yangon ထုတ်ပေးတယ် ဒါပေမယ့် timezone က မသိသေးဘူး Yangon ကို */
   final String timeZoneName = "Asia/Rangoon";
   //final String timeZoneName = await platform.invokeMethod('getTimeZoneName');
-  //print("zone name is "+timeZoneName);
+  print("zone name is "+timeZoneName);
   tz.setLocalLocation(tz.getLocation(timeZoneName));
 }
 
